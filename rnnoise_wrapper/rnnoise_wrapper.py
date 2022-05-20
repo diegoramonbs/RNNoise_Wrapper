@@ -15,6 +15,7 @@
 import sys
 import os
 import platform
+import subprocess
 import time
 import ctypes
 import pkg_resources
@@ -47,11 +48,10 @@ class RNNoise(object):
     def __init__(self, f_name_lib=None):
 
         f_name_lib = os.path.join(os.path.realpath(os.path.dirname(__file__)),
-                                  'libs', 'librnnoise.so.0.4.1')
+                                  'libs', 'librnnoise_default.so.0.4.1')
         if not os.path.exists(f_name_lib):
             print('You must first compile RNNoise library.')
             sys.exit(1)
-
         #f_name_lib = self.__get_f_name_lib(f_name_lib)
         self.rnnoise_lib = ctypes.cdll.LoadLibrary(f_name_lib)
 
