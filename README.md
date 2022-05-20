@@ -3,7 +3,7 @@
 
 ## Install using pip:
 ```bash
-pip install git+https://github.com/Desklop/RNNoise_Wrapper
+pip install git+https://github.com/diegoramonbs/RNNoise_Wrapper
 ```
 
 ## Install dependencies
@@ -14,7 +14,7 @@ sudo apt-get install autoconf libtool
 ## Build RNNnoise 
 
 ```bash
-git clone https://github.com/Desklop/RNNoise_Wrapper
+git clone https://github.com/diegoramonbs/RNNoise_Wrapper
 cd RNNoise_Wrapper
 ./compile_rnnoise.sh
 ```
